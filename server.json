@@ -1,9 +1,9 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "uk.co.harktech/quotes",
-  "title": "Hark Tech 3D Printing (UK)",
-  "description": "Price your own 3D files or Printables/Thingiverse models and get a UK checkout link.",
-  "version": "1.1.1",
+  "title": "Hark Tech 3D Printing and Repair (UK)",
+  "description": "UK 3D printing quotes for your files or Printables models, mail-in repair prices and order status.",
+  "version": "1.2.0",
   "repository": {"url": "https://github.com/grant0013/harktech-mcp", "source": "github"},
   "websiteUrl": "https://harktech.co.uk/for-ai-assistants.html",
   "icons": [
