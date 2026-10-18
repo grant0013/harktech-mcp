@@ -44,14 +44,20 @@ Full guide: https://harktech.co.uk/for-ai-assistants.html
 | `get_quote` | Live price, postage, dispatch time, batch discounts and order link for a catalogue model, material and quantity. |
 | `get_upload_page` | Where to upload a file when there is no share link. |
 | `get_service_info` | Order minimums, postage, lead times, batch discounts, materials and licence policy. |
+| `search_repair_services` | Matches a device and fault to Hark Tech's published mail-in repair services: fixed price or assessment fee, 5 to 7 working day turnaround, warranty and a booking link. |
+| `get_repair_service_info` | Repair policies: the mail-in process, what the £40 assessment covers, what is not offered, warranty, return postage, trade terms and privacy. |
+| `get_order_status` | Progress of one 3D print order for the customer who placed it (order reference plus the email it was placed with). |
+| `get_repair_status` | Progress of one repair booking or enquiry for its customer (reference plus the email it was booked with). Status, dates and return tracking only. |
 
-Materials: PLA, PLA Matte, PLA Silk, PETG, TPU, ABS, ASA, PC, Nylon, PETG-CF and PA-CF. Prints are posted across the UK.
+Materials: PLA, PLA Matte, PLA Silk, PETG, TPU, ABS, ASA, PC, Nylon, PETG-CF and PA-CF. Prints are posted across the UK. Repairs are mail-in only (consoles, controllers, handhelds, laptops, TV and monitor boards, retro computers and circuit boards); the connector never books, orders or takes payment.
 
 ## Example prompts
 
 - "Here's my drone frame on Google Drive, how much in PETG-CF?"
 - "Find a wall mount for a Dyson V15 and price 2 in PETG."
 - "What's the cheapest way to get 20 of these cable clips printed and posted?"
+- "My PS5 says no signal on the TV, what would Hark Tech charge to fix it?"
+- "Where is my repair? Booking BK-1A2B3C4D, booked with sam@example.com."
 
 ## How it works
 
