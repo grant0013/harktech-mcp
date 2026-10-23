@@ -1,0 +1,4 @@
+.git
+.well-known
+__pycache__
+*.pyc

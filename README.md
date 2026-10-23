@@ -71,10 +71,19 @@ You don't need to, the hosted endpoint is free to use. To read or run the code:
 
 ```bash
 pip install -r requirements.txt
-HARKTECH_BACKEND=https://harktech.co.uk python server.py
+python run_local.py           # stdio, for desktop MCP clients
+python run_local.py --http    # streamable HTTP on 0.0.0.0:8003/mcp
 ```
 
-It listens on `127.0.0.1:8003/mcp`.
+Or with Docker:
+
+```bash
+docker build -t harktech-mcp .
+docker run -i --rm harktech-mcp                       # stdio
+docker run --rm -p 8003:8003 harktech-mcp --http      # HTTP
+```
+
+`run_local.py` points the tools at Hark Tech's public API (`HARKTECH_BACKEND`, default `https://harktech.co.uk`). Prices, checkout links and status lookups are the same as the hosted endpoint.
 
 ## Contact
 
